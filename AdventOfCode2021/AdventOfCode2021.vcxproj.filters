@@ -15,8 +15,143 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AdventOfCode2021.cpp">
+    <ClCompile Include="src\AdventOfCode2021.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Days\Day1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day17.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day21.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Days\Day25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\day1_test_input.txt" />
+    <Text Include="data\day1_input.txt" />
+    <Text Include="data\day2_input.txt" />
+    <Text Include="data\day2_test_input.txt" />
+    <Text Include="data\day3_input.txt" />
+    <Text Include="data\day3_test_input.txt" />
+    <Text Include="data\day4_input.txt" />
+    <Text Include="data\day4_test_input.txt" />
+    <Text Include="data\day5_input.txt" />
+    <Text Include="data\day5_test_input.txt" />
+    <Text Include="data\day6_input.txt" />
+    <Text Include="data\day6_test_input.txt" />
+    <Text Include="data\day7_input.txt" />
+    <Text Include="data\day7_test_input.txt" />
+    <Text Include="data\day8_input.txt" />
+    <Text Include="data\day8_test_input.txt" />
+    <Text Include="data\day9_input.txt" />
+    <Text Include="data\day9_test_input.txt" />
+    <Text Include="data\day10_input.txt" />
+    <Text Include="data\day10_test_input.txt" />
+    <Text Include="data\day11_input.txt" />
+    <Text Include="data\day11_test_input.txt" />
+    <Text Include="data\day12_input.txt" />
+    <Text Include="data\day12_test_input.txt" />
+    <Text Include="data\day13_input.txt" />
+    <Text Include="data\day13_test_input.txt" />
+    <Text Include="data\day14_input.txt" />
+    <Text Include="data\day14_test_input.txt" />
+    <Text Include="data\day15_input.txt" />
+    <Text Include="data\day15_test_input.txt" />
+    <Text Include="data\day16_input.txt" />
+    <Text Include="data\day16_test_input.txt" />
+    <Text Include="data\day17_input.txt" />
+    <Text Include="data\day17_test_input.txt" />
+    <Text Include="data\day18_input.txt" />
+    <Text Include="data\day18_test_input.txt" />
+    <Text Include="data\day19_input.txt" />
+    <Text Include="data\day19_test_input.txt" />
+    <Text Include="data\day20_input.txt" />
+    <Text Include="data\day20_test_input.txt" />
+    <Text Include="data\day21_input.txt" />
+    <Text Include="data\day21_test_input.txt" />
+    <Text Include="data\day22_input.txt" />
+    <Text Include="data\day22_test_input.txt" />
+    <Text Include="data\day23_input.txt" />
+    <Text Include="data\day23_test_input.txt" />
+    <Text Include="data\day24_input.txt" />
+    <Text Include="data\day24_test_input.txt" />
+    <Text Include="data\day25_input.txt" />
+    <Text Include="data\day25_test_input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AdventOfCode2021.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Days.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
