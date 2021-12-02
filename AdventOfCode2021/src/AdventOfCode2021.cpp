@@ -2,6 +2,18 @@
 #include "Days.hpp"
 #include "AdventOfCode2021.hpp"
 
+namespace aoc {
+	void ReadFromFile(std::vector<std::string>& x, const std::string& file_name) {
+		std::ifstream read_file(file_name);
+		if (read_file.is_open()) {
+			std::string line;
+			while (std::getline(read_file, line)) {
+				x.push_back(line);
+			}
+		}
+	}
+}
+
 int main() {
 
 	Day1::run();

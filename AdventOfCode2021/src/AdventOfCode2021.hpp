@@ -3,6 +3,7 @@
 #include <vector>
 #include <fstream>
 #include <assert.h>
+#include <string>
 
 namespace aoc {
 
@@ -17,5 +18,7 @@ namespace aoc {
 			read_file.close();
 		}
 	}
+
+	void ReadFromFile(std::vector<std::string>& x, const std::string& file_name);
 
 }

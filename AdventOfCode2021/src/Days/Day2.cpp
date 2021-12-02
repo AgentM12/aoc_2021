@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iterator>
+#include <assert.h>
 #include "../AdventOfCode2021.hpp"
 
 namespace Day2 {
@@ -9,16 +10,54 @@ namespace Day2 {
 	constexpr auto INPUT_FILE_PATH = "data/day2_input.txt";
 	constexpr auto TEST_INPUT_FILE_PATH = "data/day2_test_input.txt";
 
-	int32_t part1(const std::vector<int32_t>& input) {
-		return 0;
+	int32_t part1(const std::vector<std::string>& input) {
+		int32_t depth = 0;
+		int32_t h_pos = 0;
+		for (std::string d : input) {
+			size_t index = d.find(" ");
+			int32_t v = strtol(d.substr(index, d.length() - index).c_str(), nullptr, 10);
+			
+			switch (d[0]) {
+				case 'u':
+					depth -= v;
+					break;
+				case 'd':
+					depth += v;
+					break;
+				case 'f':
+					h_pos += v;
+					break;
+			}
+		}
+		return depth * h_pos;
 	}
 
-	int32_t part2(const std::vector<int32_t>& input) {
-		return 0;
+	int32_t part2(const std::vector<std::string>& input) {
+		int32_t aim = 0;
+		int32_t depth = 0;
+		int32_t h_pos = 0;
+		for (std::string d : input) {
+			size_t index = d.find(" ");
+			int32_t v = strtol(d.substr(index, d.length() - index).c_str(), nullptr, 10);
+
+			switch (d[0]) {
+				case 'u':
+					aim -= v;
+					break;
+				case 'd':
+					aim += v;
+					break;
+				case 'f':
+					h_pos += v;
+					depth += aim * v;
+					break;
+			}
+		}
+		return depth * h_pos;
 	}
 
 	int run() {
-		std::vector<int32_t> rx;
+		std::vector<std::string> rx;
 		if (TEST) {
 			aoc::ReadFromFile(rx, TEST_INPUT_FILE_PATH);
 		} else {
