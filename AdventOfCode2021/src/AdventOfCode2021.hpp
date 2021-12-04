@@ -7,17 +7,7 @@
 
 namespace aoc {
 
-	template <typename T>
-	void ReadFromFile(std::vector<T>& x, const std::string& file_name) {
-		std::ifstream read_file(file_name);
-		if (read_file.is_open()) {
-
-			std::copy(std::istream_iterator<T>(read_file), std::istream_iterator<T>(),
-					  std::back_inserter(x));
-
-			read_file.close();
-		}
-	}
+	void ReadFromFile(std::vector<int32_t>& x, const std::string& file_name);
 
 	void ReadFromFile(std::vector<std::string>& x, const std::string& file_name);
 
