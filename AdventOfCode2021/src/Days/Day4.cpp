@@ -35,7 +35,7 @@ namespace Day4 {
 						int32_t v = BOARD_SZ - 1;
 						for (int32_t y = 0; y < BOARD_SZ; y++) {
 							for (int32_t x = 0; x < BOARD_SZ; x++) {
-								if (((y == r) ^ (x == c)) && (board[y * BOARD_SZ + x] == -1)) {
+								if (((y == r) ^ (x == c)) && (board[static_cast<size_t>(y) * BOARD_SZ + x] == -1)) {
 									if (y == r) {
 										h--;
 									} else if (x == c) {
