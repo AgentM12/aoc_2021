@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <iterator>
-#include <bitset>
 #include "../AdventOfCode2021.hpp"
 
 namespace Day3 {
