@@ -143,7 +143,7 @@ namespace Day8 {
 		s7d num = 0;
 		bool has_value = false;
 		Entry e{};
-		for (std::string line : rx) {
+		for (const std::string& line : rx) {
 			for (char c : line) {
 				if (c >= 'a' && c <= 'g') {
 					num |= flags[(c - 'a')];

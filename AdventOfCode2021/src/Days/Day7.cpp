@@ -70,7 +70,7 @@ namespace Day7 {
 		std::vector<int32_t> positions;
 		bool has_value = false;
 		int32_t num;
-		for (std::string& line : rx) {
+		for (const std::string& line : rx) {
 			num = 0;
 			for (char c : line) {
 				int32_t v = (c - '0');

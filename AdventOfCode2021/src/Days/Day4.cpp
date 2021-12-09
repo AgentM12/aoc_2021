@@ -86,11 +86,11 @@ namespace Day4 {
 		std::vector<std::vector<int32_t>> boards;
 		std::vector<int32_t> board_nums;
 		bool read_boards = false;
-		for (std::string& line : rx) {
+		for (const std::string& line : rx) {
 			int32_t num = 0;
 			if (!read_boards) {
 				for (int i = 0; i < line.length(); i++) {
-					char& c = line[i];
+					char c = line[i];
 					if (c == ',') {
 						calls.push_back(num);
 						num = 0;
@@ -111,7 +111,7 @@ namespace Day4 {
 				}
 				bool p = false;
 				for (int i = 0; i < line.length(); i++) {
-					char& c = line[i];
+					char c = line[i];
 					if (c == ' ') {
 						if (p) {
 							board_nums.push_back(num);

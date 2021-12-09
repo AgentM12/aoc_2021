@@ -12,7 +12,7 @@ namespace Day2 {
 	int32_t part1(const std::vector<std::string>& input) {
 		int32_t depth = 0;
 		int32_t h_pos = 0;
-		for (std::string d : input) {
+		for (const std::string& d : input) {
 			size_t index = d.find(" ");
 			int32_t v = strtol(d.substr(index, d.length() - index).c_str(), nullptr, 10);
 			
@@ -35,7 +35,7 @@ namespace Day2 {
 		int32_t aim = 0;
 		int32_t depth = 0;
 		int32_t h_pos = 0;
-		for (std::string d : input) {
+		for (const std::string& d : input) {
 			size_t index = d.find(" ");
 			int32_t v = strtol(d.substr(index, d.length() - index).c_str(), nullptr, 10);
 

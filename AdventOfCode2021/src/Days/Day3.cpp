@@ -70,7 +70,7 @@ namespace Day3 {
 
 		std::vector<std::int32_t> bin_list;
 		size_t sz = rx[0].length();
-		for (std::string v : rx) {
+		for (const std::string& v : rx) {
 			int32_t i = stoi(v, 0, 2);
 			bin_list.push_back(i);
 		}

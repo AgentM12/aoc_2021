@@ -61,7 +61,7 @@ namespace Day5 {
 		}
 
 		std::vector<Line> lines;
-		for (std::string line : rx) {
+		for (const std::string& line : rx) {
 			Line l{};
 			sscanf_s(line.c_str(), "%hu,%hu -> %hu,%hu", &l.x1, &l.y1, &l.x2, &l.y2);
 			lines.push_back(l);
@@ -73,11 +73,15 @@ namespace Day5 {
 		auto duration1 = std::chrono::duration_cast<std::chrono::milliseconds>(stop1 - start1);
 		printf_s("Solution 5.1: %d [%lld ms]\n", p1, duration1.count());
 
+		//printf_s("Solution 5.1: %d\n", p1);
+
 		auto start2 = std::chrono::high_resolution_clock::now();
 		int32_t p2 = part2(lines);
 		auto stop2 = std::chrono::high_resolution_clock::now();
 		auto duration2 = std::chrono::duration_cast<std::chrono::milliseconds>(stop2 - start2);
-		printf_s("Solution 5.2: %d [%lld ms]\n", p2, duration1.count());
+		printf_s("Solution 5.2: %d [%lld ms]\n", p2, duration2.count());
+
+		//printf_s("Solution 5.2: %d\n", p2);
 		
 		return 0;
 	}
