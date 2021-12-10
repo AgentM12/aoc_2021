@@ -37,7 +37,7 @@ int main() {
 	Day7::run();
 	Day8::run();
 	Day9::run();
-	//Day10::run();
+	Day10::run();
 	//Day11::run();
 	//Day12::run();
 	//Day13::run();
