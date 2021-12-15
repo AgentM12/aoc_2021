@@ -81,7 +81,7 @@ namespace Day15 {
 		for (size_t y = 0; y < h2; y++) {
 			const std::string& line = input[y % h];
 			for (size_t x = 0; x < w2; x++) {
-				std::shared_ptr<Vertex> v = std::make_shared<Vertex>(Vertex(1 + ((line[x % w] - '0') - 1 + (y / h) + (x / w)) % 9));
+				std::shared_ptr<Vertex> v = std::make_shared<Vertex>(Vertex(1 + ((static_cast<size_t>(line[x % w]) - '0') - 1 + (y / h) + (x / w)) % 9));
 				if (x > 0) {
 					v->adj.push_back(vertices[vertices.size() - 1]);
 					vertices[vertices.size() - 1]->adj.push_back(v);
