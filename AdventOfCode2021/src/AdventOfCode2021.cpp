@@ -43,11 +43,11 @@ int main() {
 	//Day13::run();
 	//Day14::run();
 	//Day15::run();
-	Day16::run();
+	//Day16::run();
 	//Day17::run();
 	//Day18::run();
 	//Day19::run();
-	//Day20::run();
+	Day20::run();
 	//Day21::run();
 	//Day22::run();
 	//Day23::run();

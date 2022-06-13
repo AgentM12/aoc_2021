@@ -24,7 +24,7 @@ namespace Day16 {
 	uint64_t decode(const char* str, size_t start, size_t size) {
 		uint64_t v = 0;
 		for (size_t i = start; i < start + size; ++i) {
-			v = (v << 1) + static_cast<uint64_t>(str[i] - '0');
+			v = (v << 1) + static_cast<uint64_t>(str[i]) - '0';
 		}
 		return v;
 	}
